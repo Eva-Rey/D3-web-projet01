@@ -16,6 +16,38 @@ header{
 
 }
 
+
+
+.char1{
+  color: red;
+  font-size: 2em;
+}
+
+.char2{
+  color: #cc0055;
+  font-size: 1em;
+}
+
+.char3{
+  color: #ac1691;
+  font-size: 1em;
+}
+
+.char5{
+  color: red;
+  font-size: 2em;
+}
+
+.char6{
+  color: #cc0055;
+  font-size: 1em;
+}
+
+.char7{
+  color: #ac1691;
+  font-size: 1em;
+}
+
 .header-content{
   background-color: rgba(128, 0, 0, 0.5);
   padding: 3em;

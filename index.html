@@ -8,14 +8,32 @@
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Hind+Siliguri" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Hind+Siliguri:400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Dosis" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/colorbox.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="scripts/jquery.lettering.js"></script>
+
+<script src="scripts/jquery.colorbox-min.js"></script>
+
+
   </head>
 
 
 <body>
+
   <header>
       <div class="header-content">
-        <h1>Eva Rey</h1>
-        <p>Etudiante en Design Graphique</p>
+      <h1 class="fancy_title">Eva Rey</h1>
+
+  <script>
+	  $(document).ready(function() {
+	    $(".fancy_title").lettering();
+	  });
+  </script>
+
+
+  <p>Etudiante en Design Graphique</p>
       </div>
   </header>
 
@@ -37,15 +55,15 @@ Ce n’est que vers l’âge de douze ans que j’ai commencé à dessiner. J’
       <div class="comp-content">
 
       <div class="comp-item">
-      <img src="images/psd.jpg" alt="illusatrion">
+      <img src="images/image03.jpg" alt="illusatrion">
       </div>
 
       <div class="comp-item">
-      <img src="images/indd.jpg" alt="typographie">
+      <img src="images/image02.jpg" alt="typographie">
       </div>
 
       <div class="comp-item">
-      <img src="images/ai.jpg" alt="rough">
+      <img src="images/image01.jpg" alt="rough">
       </div>
 
       </div>
@@ -55,30 +73,46 @@ Ce n’est que vers l’âge de douze ans que j’ai commencé à dessiner. J’
 
 <section id="portfolio">
  <h2>Portfolio</h2>
+
+
+
+
+
+
+
+
+
+
       <div class="portfolio-content">
 
       <div class="portfolio-item">
-      <img src="images/peinture03.jpg" alt="illusatrion">
+      <img src="images/image04.jpg" alt="illusatrion">
+      <a class='gallery' href='images/image04.jpg'>Photo_1</a>
       </div>
 
       <div class="portfolio-item">
-      <img src="images/visage.jpg" alt="peinture">
+      <img src="images/image05.jpg" alt="peinture">
+      <a class='gallery' href='images/image05.jpg'>Photo_2</a>
       </div>
 
       <div class="portfolio-item">
-      <img src="images/temporal01.jpg" alt="rough">
+      <img src="images/image06.jpg" alt="rough">
+      <a class='gallery' href='images/image06.jpg'>Photo_3</a>
       </div>
 
       <div class="portfolio-item">
-      <img src="images/aquarelle.jpg" alt="aquarelle">
+      <img src="images/image07.jpg" alt="aquarelle">
+      <a class='gallery' href='images/image07.jpg'>Photo_4</a>
       </div>
 
       <div class="portfolio-item">
-      <img src="images/cheval.jpg" alt="pastel">
+      <img src="images/image08.jpg" alt="pastel">
+      <a class='gallery' href='images/image08.jpg'>Photo_5</a>
       </div>
 
       <div class="portfolio-item">
-      <img src="images/gun.jpg" alt="rough">
+      <img src="images/image09.jpg" alt="rough">
+      <a class='gallery' href='images/image09.jpg'>Photo_6</a>
       </div>
 
       </div>
@@ -115,6 +149,10 @@ Ce n’est que vers l’âge de douze ans que j’ai commencé à dessiner. J’
     </div>
 </footer>
 
-
+<script>
+      jQuery(document).ready(function () {
+        jQuery('a.gallery').colorbox({ opacity:0.5 , rel:'group1' });
+      });
+    </script>
 </body>
 </html>
